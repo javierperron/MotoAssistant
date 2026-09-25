@@ -38,6 +38,13 @@
             </intent-filter>
         </activity>
 
+        <!-- Registro del Servicio de Segundo Plano (Dentro de <application>) -->
+        <service
+            android:name=".data.AudioForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+
     </application>
 
 </manifest>
